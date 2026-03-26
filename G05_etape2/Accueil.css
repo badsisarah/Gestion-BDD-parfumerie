@@ -1,0 +1,64 @@
+/* Image de fond */
+body {
+    background-image: url('image/accueil4.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Conteneur vertical à gauche */
+.conteneur-boutons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px; /* Réduire ici pour les rapprocher */
+}
+
+.conteneur-boutons h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* Formulaire qui entoure chaque bouton */
+form {
+    display: inline-block;
+    background-color: #7e352f; /* Couleur bordeaux */
+    border: 3px solid #ffffff; /* Bordure blanche */
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Effet au survol du bloc */
+form:hover {
+    transform: scale(1.05);
+}
+
+/* Le bouton en lui-même */
+form input[type="submit"] {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: inherit;
+}
+
+/* Hover sur le bouton */
+form input[type="submit"]:hover {
+    color: #ffe3e0;
+}

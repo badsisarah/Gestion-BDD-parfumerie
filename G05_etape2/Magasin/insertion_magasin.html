@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Insertion d'un magasin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffe4ec, #f8d7dd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 24px;
+            color: #800040;
+        }
+        form label {
+            display: block;
+            font-weight: 500;
+            color: #800040;
+        }
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            width: 100%;
+            background-color: #e91e63;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="number"] {
+       width: 100%;
+       padding: 10px;
+       margin-top: 5px;
+       border: 1px solid #d889a6;
+       border-radius: 10px;
+       background-color: #fff0f5;
+       transition: border-color 0.3s ease;
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Ajouter un magasin</h1>
+    <form method="POST" action="inserer.php">
+        <label for="mag_nom">Nom du magasin :</label><br>
+        <input type="text" id="mag_nom" name="mag_nom" required><br><br>
+
+        <label for="mag_adresse">Adresse :</label><br>
+        <input type="text" id="mag_adresse" name="mag_adresse" required><br><br>
+
+        <label for="mag_telephone">Téléphone :</label><br>
+        <input type="text" id="mag_telephone" name="mag_telephone" pattern="[0-9]{10}" required><br><br>
+
+        <label for="mag_ville">Ville :</label><br>
+        <input type="text" id="mag_ville" name="mag_ville" required><br><br>
+
+        <label for="mag_email">Email :</label><br>
+        <input type="email" id="mag_email" name="mag_email" required><br><br>
+
+        <input type="submit" value="Ajouter le magasin">
+    </form>
+</div>
+</body>
+</html>
