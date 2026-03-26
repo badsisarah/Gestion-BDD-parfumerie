@@ -42,5 +42,4 @@ Projet réalisé en Licence Informatique (L2).
 
 ---
 
-## 👩‍💻 Auteur
-Sarah Badsi
+
